@@ -2,7 +2,13 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { ContentItem, CategoryInfo } from '@/lib/data';
+import { ContentItem, categoryInfo } from '@/lib/data';
+
+interface CategoryInfo {
+  label: string;
+  description: string;
+  color: string;
+}
 
 interface ContentDetailProps {
   content: ContentItem;
